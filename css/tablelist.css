@@ -1,0 +1,47 @@
+.container-table {
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;   
+    align-items: center;
+}
+
+thead
+{
+    font-size: 15px; 
+    text-align: center;
+    background: rgb(104, 55, 240);
+    color: white;
+}
+
+tbody{
+    font-size: 12px;    
+}
+
+.icon {
+    width: 40px;
+    height: 40px;    
+}
+.icon-action {
+    width: 20px;
+    height: 20px;    
+}
+
+.row-h
+{
+    width: 60px; 
+}
+
+td
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.div-action {
+    width: 30px;
+    height: 22px;  
+    display: inline-block;
+    font-size: 10px;
+}
+
+th{text-align: center;}

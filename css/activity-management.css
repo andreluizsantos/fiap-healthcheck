@@ -1,0 +1,33 @@
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  input[type=radio]:checked + label>img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px 3px rgb(23, 25, 182);
+  }
+  
+  /* Stuff after this is only to make things more pretty */
+  input[type=radio] + label>img {
+    border: 1px dashed #444;
+    width: 80px;
+    height: 80px;
+    transition: 500ms all;
+  }
+  
+  td
+  {
+      vertical-align: top;      
+      font-size: 15px; 
+  }
+
+.container-table {
+  margin-top: 50px;
+  align-items: center;
+  width: 200px; 
+ 
+  margin-left: auto;
+  margin-right: auto;
+}
+

@@ -1,0 +1,135 @@
+<!doctype html>
+<html >
+  <head>
+    <title>Health Track</title>
+ 
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/activity-management.css" >
+
+  </head>
+  <body>
+    <!-- Menu bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Fourth navbar example">
+    
+     <div class="container-fluid">
+       <a class="navbar-brand" href="main.htm">
+         <img src="./images/healthtracker.png"  width="30" height="30" class="d-inline-block align-top" alt="">
+         Health Track
+       </a>
+      
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" 
+         aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarsExample04">
+         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="addactivity.htm">Registrar Atividade</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active"" aria-current="page" href="addweight.htm">Registrar Peso </a>
+           </li>           
+         </ul>         
+       </div>
+      </div>
+    </nav>
+
+ 
+  <div class="container-table">
+
+    <table class="table" >
+      <colgroup>
+        <col span="1" style="width: 33%">
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">      
+     </colgroup>
+  
+      
+      <tbody>
+        <tr>        
+          <td colspan="3">Selecione uma atividade</td>
+        <tr>        
+          <td>
+            <input type="radio" name="atividade" id="musculacao" class="input-hidden" checked />
+            <label for="musculacao">
+              <img  src="./images/icons8-halteres-com-presilha-52.png" />
+            </label>
+          </td>
+          <td>
+            <input type="radio" name="atividade" id="corrida" class="input-hidden" />
+            <label for="corrida">
+              <img  src="./images/icons8-correr-48.png" />
+            </label>
+          </td>
+          <td>
+            <input type="radio" name="atividade" id="yoga" class="input-hidden" />
+            <label for="yoga">
+              <img  src="./images/icons8-ioga-48.png" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>        
+          <td>
+            <input type="radio" name="atividade" id="nadar" class="input-hidden" />
+            <label for="nadar">
+              <img  src="./images/icons8-nadar-100.png" />
+            </label>
+          </td>
+          <td>
+            <input type="radio" name="atividade" id="ciclismo" class="input-hidden" />
+            <label for="ciclismo">
+              <img  src="./images/icons8-bicicleta-128.png" />
+            </label>
+          </td>
+          <td>
+            <input type="radio" name="atividade" id="luta" class="input-hidden" />
+            <label for="luta">
+              <img  src="./images/icons8-taekwondo-60.png" />
+            </label>
+          </td>
+        </tr>
+
+        <tr>        
+          <td colspan="3">
+            <table  >
+              <colgroup>
+                <col span="1" style="width: 60%">
+                <col span="1" style="width: 40%;">                
+             </colgroup>
+              <tbody>
+                <tr>        
+                  <td>Tempo de treino</td>
+                  <td>
+                    <input class="form-control form-control-sm" id="horas" type="text" placeholder="00" aria-label="00" width="50px">
+                    <label for="horas">horas</label>
+                  </td>
+                </tr>  
+                <tr>        
+                  <td></td>
+                  <td>
+                    <input class="form-control form-control-sm" id="minutos" type="text" placeholder="00" aria-label="00" width="50px">
+                    <label for="minutos">minutos</label>
+                  </td>
+                </tr>  
+              </tbody>      
+            </table>
+
+        </tr>
+        <tr>        
+          <td></td>
+          <td> <button class="w-100 btn btn-md btn-primary" type="button" onclick="location.href='./activitylist.htm'">Incluir</button></td>
+          <td> <button class="w-100 btn btn-md btn-primary" type="button" onclick="location.href='./activitylist.htm'">Cancelar</button></td>        
+        </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>  
+  </body>
+</html>

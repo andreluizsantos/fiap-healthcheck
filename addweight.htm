@@ -1,0 +1,80 @@
+<!doctype html>
+<html >
+  <head>
+    <title>Health Track</title>
+ 
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/activity-management.css" >
+
+  </head>
+  <body>
+    <!-- Menu bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Fourth navbar example">
+    
+     <div class="container-fluid">
+       <a class="navbar-brand" href="main.htm">
+         <img src="./images/healthtracker.png"  width="30" height="30" class="d-inline-block align-top" alt="">
+         Health Track
+       </a>
+      
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" 
+         aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarsExample04">
+         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="addactivity.htm">Registrar Atividade</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active"" aria-current="page" href="addweight.htm">Registrar Peso </a>
+           </li>           
+         </ul>         
+       </div>
+      </div>
+    </nav>
+
+ 
+  <div class="container-table">
+
+    <table class="table" >
+      <colgroup>
+        <col span="1" style="width: 50%">
+        <col span="1" style="width: 50%;">
+          
+     </colgroup>
+  
+      
+      <tbody>
+       
+        <Tr>
+          <Td colspan="2">
+            <label for="peso">Peso</label>
+            <input class="form-control form-control-sm" id="peso" type="text" placeholder="85kg" aria-label="85kg" width="80px">
+          </Td>
+        </Tr>
+        <Tr>
+          <Td colspan="2">
+            <label for="data">Data</label>
+            <input class="form-control form-control-sm" id="data" type="text" placeholder="01/01/2021" aria-label="01/01/2021" width="100px">
+          </Td>
+        </Tr>
+
+      
+        <tr>        
+        
+          <td> <button class="w-100 btn btn-md btn-primary" type="button" onclick="location.href='./weightlist.htm'">Incluir</button></td>
+          <td> <button class="w-100 btn btn-md btn-primary" type="button" onclick="location.href='./weightlist.htm'">Cancelar</button></td>        
+        </tr>
+
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>  
+  </body>
+</html>
